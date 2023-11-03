@@ -1,0 +1,11 @@
+@import '../helpers/variables.scss';
+
+@mixin inputs ($border-radius, $padding){
+    padding:$padding;
+    outline:none;
+    border:none;
+    border-radius:$border-radius;
+    width: 100%;
+    background-color: #fff;
+    font-family: inherit;
+}

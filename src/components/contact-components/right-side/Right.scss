@@ -1,1 +1,64 @@
 @import '../../../styles/helpers/variables';
+@import '../../../styles/helpers/button.scss';
+@import '../../../styles/helpers/inputs.scss';
+
+.right-side{
+    background-color: $main-bg;
+    padding: 15px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    & h2{
+        color:$white-text;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & input, textarea{
+            @include inputs(0, 10px);
+        }
+
+        & textarea{
+            overflow: hidden;
+            resize: none;
+            height: 100px;
+            font-family: inherit;
+        }
+
+        .send-btn{
+            @include buttonStyle(100%, $white-text, $black-text);
+            background-color: $white-text;
+            margin:auto;
+            padding: 10px;
+            border-radius: 0;
+
+            &:hover{
+                background-color: lightgrey;
+            }
+        }
+    }
+}
+
+
+// ************MEDIA QUERIES***********
+@media (max-width:630px){
+    .right-side{
+        width: 85%;
+    }
+}
+@media (max-width:355px){
+    .right-side{
+        width: 90%;
+        & h2{
+            font-size: 1.2em;
+        }
+    }
+}
