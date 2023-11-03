@@ -1,0 +1,65 @@
+@import '../../../styles/helpers/button.scss';
+@import '../../../styles/helpers//variables.scss';
+
+.partnership{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+    .partnership-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay-texts{
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,0,0.6);
+        position: absolute;
+        top:0;
+        left:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:$white-text;
+
+        & h1{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        & p{
+            text-align: center;
+            width: 70%;
+            line-height: 1.6;
+            letter-spacing: 0.4px;
+        }
+        
+    }
+}
+
+
+// ******MEDIA QUERIES*******
+
+@media (max-width: 345px){
+
+    .partnership{
+
+            .overlay-texts{
+    
+                & h1{
+                    font-size: 2em;
+                }
+        
+                & p{
+                    width: 90%;
+                }
+            
+            }
+        }
+    }

@@ -1,0 +1,122 @@
+@import '../../../styles//helpers//button.scss';
+@import '../../../styles//helpers//variables.scss';
+
+
+.featured-houses{
+    width: 100%;
+    padding:50px 20px;
+    position: relative;
+
+    .title{
+        & h1{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+    }
+
+    .featured-card-container{
+        margin-top: 20px;
+        display: flex;
+        gap:20px;
+        overflow-x: hidden;
+        padding:0 5px 10px 5px;
+        scroll-behavior: smooth;
+
+        .featured-card{
+            min-width: 350px;
+            box-shadow: 1px 4px 6px rgb(0,0,0,0.5);
+
+            .img{
+                width: 100%;
+                height: 250px;
+                position: relative;
+                overflow:hidden;
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition:all .4s;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .featured-description{
+                padding:20px;
+
+                & h2{
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                }
+                & p{
+                    margin-top: 8px;
+                    font-size: .85rem;
+                }
+                
+            }
+             .view-more{
+                    margin:0 0 20px 20px;
+                    @include buttonStyle(200px, $black-text, $black-text);
+
+                    &:hover{
+                        background-color: $button-hover;
+                        color:$hover-white
+                    }
+                }
+        }
+
+    }
+
+    // Prev-next Icon
+    .next-prev{
+        position: absolute;
+        top:42%;
+        left:0;
+        padding:0 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow{
+            width: 40px;
+            height: 40px;
+            border-radius:50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:$white-text;
+            background-color: $main-bg;
+            cursor:pointer;
+
+            .move-icon{
+                font-size: 1.9rem;
+            }
+        }
+    }
+
+}
+
+
+// *********MEDIA QUERIES**********
+
+@media (max-width:412px){
+    .featured-houses{
+
+    .featured-card-container{
+
+        .featured-card{
+            min-width: 300px;
+             .view-more{
+                    @include buttonStyle(150px, $black-text, $black-text);
+                    font-size: 0.9em;
+                }
+        }
+
+    }
+
+}}

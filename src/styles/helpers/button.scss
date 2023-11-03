@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+@mixin buttonStyle($width, $border-clr, $text-color){
+    display: flex;
+    justify-content: center;
+    padding:13px 20px;
+    width:$width;
+    border-radius:5px;
+    background-color: transparent;
+    border:1px solid $border-clr;
+    font-size: 0.95rem;
+    color:$text-color;
+    margin-top: 10px;
+    font-weight: 500;
+    text-transform:uppercase;
+    letter-spacing: .5px;
+    cursor:pointer;
+    transition:ease .4s;
+}
