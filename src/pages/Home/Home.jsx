@@ -4,15 +4,18 @@ import Title from '../../components/home-components/Goals/Title'
 import Featured from '../../components/home-components/featured/Featured'
 import Partnership from '../../components/home-components/partnership/Partnership'
 // import Testimonial from '../../components/testimonial/Testimonial'
+import './Home.scss'
 
 const Home = () => {
   return (
     <div className='home'>
       <Hero/>
-      <About/>
-      <Title/>
-      <Featured/>
-      <Partnership/>
+      <div className="other-components">
+        <About/>
+        <Title/>
+        <Featured/>
+        <Partnership/>
+      </div>
     </div>
   )
 }

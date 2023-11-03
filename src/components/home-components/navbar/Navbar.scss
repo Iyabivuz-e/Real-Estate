@@ -82,6 +82,18 @@
         right:0;
         width: 100%;
         height: 100vh;
+        animation: animate-navbar ease .4s;
+
+        // Animation
+        @keyframes animate-navbar {
+            from{
+                opacity:0;
+                width: 0;
+            }to{
+                opacity:1;
+                width: 100%;
+            }
+        }
 
         .close-btn{
             border:none;
@@ -94,7 +106,6 @@
             .close-icon{
                 font-size: 1.85em;
                 color:$white-text;
-
             }
         }
 
