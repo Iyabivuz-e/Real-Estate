@@ -14,7 +14,7 @@ const Sections = () => {
           <small>(Gura inzu)</small>
           <p>Browse our exclusive properties in the area</p>
           <button className='section-btn'>
-            <Link to="/search-home">Buy a Home</Link>
+            <Link to="/explore">Buy a Home</Link>
           </button>
         </div>
       </div>
@@ -36,7 +36,7 @@ const Sections = () => {
           <small>(Kodesha inzu)</small>
           <p>Browse our exclusive properties in the area.</p>
           <button className='section-btn'>
-            <Link to="/search-home">Rent a Home</Link>
+            <Link to="explore">Rent a Home</Link>
             </button>
         </div>
       </div>

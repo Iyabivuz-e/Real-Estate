@@ -44,11 +44,11 @@ const Footer = () => {
             <div className="quick-links">
                 <h3>Important Links</h3>
                 <ul>
-                    <li><Link to="">Explore</Link></li>
+                    <li><Link to="/explore">Explore</Link></li>
                     <li><Link to="">Buy a Home</Link></li>
                     <li><Link to="">Rent a Home</Link></li>
-                    <li><Link to="">Sell a Home</Link></li>
-                    <li><Link to="">Contact</Link></li>
+                    <li><Link to="/sell-house">Sell a Home</Link></li>
+                    <li><Link to="/contact-us">Contact</Link></li>
                 </ul>
             </div>
             <div className="subscribe">

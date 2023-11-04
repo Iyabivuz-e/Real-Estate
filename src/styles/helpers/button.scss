@@ -3,7 +3,7 @@
 @mixin buttonStyle($width, $border-clr, $text-color){
     display: flex;
     justify-content: center;
-    padding:13px 20px;
+    padding:10px 20px;
     width:$width;
     border-radius:5px;
     background-color: transparent;

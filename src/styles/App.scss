@@ -13,3 +13,18 @@ a{
     color:$white-text;
     text-decoration: none;
 }
+
+// To top button
+.to-top-btn{
+    width:45px;
+    height: 45px;
+    font-size: 1.3em;
+    border-radius: 50%;
+    position: fixed;
+    bottom:40px;
+    right:50px;
+    color: $white-text;
+    cursor:pointer;
+    border:none;
+    background-color: $main-bg;
+}

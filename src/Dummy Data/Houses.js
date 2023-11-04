@@ -21,6 +21,9 @@ const houses = [
       "bathrooms": 1,
       "size": 1000,
       "location": "City Center",
+      "type": "Apartment",
+      "status": "available",
+      "amenities": ["parking", "Non Furnished", "Semi Furnished"],
       "image": h1
     },
     {
@@ -33,6 +36,8 @@ const houses = [
       "bathrooms": 1,
       "size": 500,
       "location": "Suburbia",
+      "type": "Residential",
+      "status": "available",
       "image": h2
     },
     {
@@ -45,6 +50,9 @@ const houses = [
       "bathrooms": 2,
       "size": 2000,
       "location": "Hillside",
+      "type": "Residential",
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
+      "status": "available",
       "image": h3
     },
     {
@@ -57,6 +65,8 @@ const houses = [
       "bathrooms": 1,
       "size": 1200,
       "location": "Lakefront",
+      "type": "Residential",
+      "status": "available",
       "image": h4
     },
     {
@@ -69,6 +79,9 @@ const houses = [
       "bathrooms": 2,
       "size": 3000,
       "location": "City Center",
+      "type": "Apartment",
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
+      "status": "Not available",
       "image": h5
     },
     {
@@ -81,6 +94,8 @@ const houses = [
       "bathrooms": 3,
       "size": 2500,
       "location": "Suburbia",
+      "type": "Residential",
+      "status": "available",
       "image": h6
     },
     {
@@ -93,6 +108,9 @@ const houses = [
       "bathrooms": 2,
       "size": 1200,
       "location": "City Center",
+      "type": "Apartment",
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
+      "status": "Not available",
       "image": h7
     },
     {
@@ -105,6 +123,9 @@ const houses = [
       "bathrooms": 2,
       "size": 1800,
       "location": "Suburbia",
+      "type": "Apartment",
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
+      "status": "Not available",
       "image": h8
     },
     {
@@ -117,6 +138,9 @@ const houses = [
       "bathrooms": 1,
       "size": 1500,
       "location": "Riverside",
+      "type": "Residential",
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
+      "status": "Not available",
       "image": h9
     },
     {
@@ -129,9 +153,13 @@ const houses = [
       "bathrooms": 2,
       "size": 1600,
       "location": "Town",
+      "type": "Residential",
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
+      "status": "Available",
       "image": h10
     }
   ]
+  
 const featuredHouses = [
     {
       "id": 1,
@@ -143,7 +171,7 @@ const featuredHouses = [
       "bathrooms": 1,
       "size": 1000,
       "location": "City Center",
-      "amenities": ["parking", "yard", "washer"],
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished"],
       "image": h1
     },
     {
@@ -156,20 +184,20 @@ const featuredHouses = [
       "bathrooms": 1,
       "size": 500,
       "location": "Suburbia",
-      "amenities": ["parking", "yard", "washer", "pool"],
+      "amenities": ["Furnished", "Non Furnished", "Semi Furnished", "pool"],
       "image": h2
     },
     {
       "id": 3,
       "category": "sell",
       "title": "Modern House with a View",
-      "description": "A modern and stylish house with a stunning view. Features an open floor plan, large windows, and a spacious backyard.",
+      "description": "A modern and stylish house with a stunning view. Features an open floor plan, large windows, and a spacious backNon Furnished.",
       "price": 350000,
       "bedrooms": 3,
       "bathrooms": 2,
       "size": 2000,
       "location": "Hillside",
-       "amenities": ["parking", "yard", "washer", "pool", "spa"],
+       "amenities": ["parking", "Non Furnished", "Semi Furnished", "pool", "spa"],
       "image": h3
     },
     {
@@ -182,7 +210,7 @@ const featuredHouses = [
       "bathrooms": 1,
       "size": 1200,
       "location": "Lakefront",
-    "amenities": ["parking", "yard", "washer"],
+    "amenities": ["parking", "Non Furnished", "Semi Furnished"],
       "image": h4
     },
     {
@@ -195,7 +223,7 @@ const featuredHouses = [
       "bathrooms": 2,
       "size": 3000,
       "location": "City Center",
-     "amenities": ["parking", "yard", "washer/dryer", "pool"],
+     "amenities": ["parking", "Non Furnished", "Semi Furnished/dryer", "pool"],
       "image": h5
     },
     {
@@ -208,7 +236,7 @@ const featuredHouses = [
       "bathrooms": 2,
       "size": 3000,
       "location": "City Center",
-     "amenities": ["parking", "yard", "washer/dryer", "pool"],
+     "amenities": ["parking", "Non Furnished", "Semi Furnished/dryer", "pool"],
       "image": h5
     },
     {
@@ -221,7 +249,7 @@ const featuredHouses = [
       "bathrooms": 2,
       "size": 3000,
       "location": "City Center",
-     "amenities": ["parking", "yard", "washer/dryer", "pool"],
+     "amenities": ["parking", "Non Furnished", "Semi Furnished/dryer", "pool"],
       "image": h5
     },
     

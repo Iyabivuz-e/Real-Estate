@@ -4,7 +4,9 @@ import Navbar from './components/home-components/navbar/Navbar'
 import Home from './pages/Home/Home'
 import Footer from './components/home-components/footer/Footer'
 import Contact from './pages/Contact/Contact'
-import Login from './components/login-components/Login'
+import Auth from './pages/Login/Auth'
+import Explore from './pages/Explore/Explore'
+import Totop from './Helpers/Totop'
 
 const App = () => {
   return (
@@ -13,10 +15,12 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/explore' element={<Explore/>}/>
+        <Route path='/login' element={<Auth/>}/>
         <Route path='/contact-us' element={<Contact/>}/>
-        <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer/>
+      <Totop/>
     </div>
     </BrowserRouter>
   );

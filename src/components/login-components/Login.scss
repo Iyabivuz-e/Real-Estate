@@ -1,0 +1,55 @@
+@import '../../styles/helpers/button.scss';
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/inputs.scss';
+
+.login-container{
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+
+    & h1{
+        text-align: center;
+        color:$white-text;
+        font-weight: 600;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+     & p{
+            color:lightgrey;
+            text-align:center;
+            font-size: 0.85em;
+            margin:0 0 15px 0;
+
+            & a{
+                color:lightgreen;
+            }
+        }
+    .login-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 15px;
+        & input{
+            padding:13px;
+            width: 100%;
+            outline:none;
+            border:none;
+            border-radius: 5px;
+        }
+        .login-btn{
+            @include buttonStyle(50%, $white-text, $black-text);
+            background-color: $white-text;
+            margin: 0 auto;
+            padding: 5px;
+            font-size: 1.1em;
+        }
+
+        & a{
+            color:lightgreen;
+            text-align:right;
+            font-size: 0.75em;
+            margin-top:-10px;
+        }
+    }
+}
